@@ -31,7 +31,7 @@ export default class UsersList extends Component {
 
     onSubmit(e) {
         e.preventDefault();
-        
+
         console.log('New user submitted:');
         console.log(`User name: ${this.state.user_name}`);
         console.log(`User gender: ${this.state.user_gender}`);

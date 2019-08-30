@@ -13,7 +13,7 @@ class App extends Component {
       <Router>
       <div className="App">
           <Navbar />
-        <Route path='/cocoapp' component={Home}/>
+        <Route path='/cocoapp' component={Home} />
         <Route path='/create' component={CreateUser} />
         <Route path='/users' component={UsersList} />
         <Route path='/edit/:id' component={EditUser} />
