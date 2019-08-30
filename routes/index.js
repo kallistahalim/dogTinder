@@ -5,10 +5,10 @@ const path = require("path");
 const router = require("express").Router();
 
 //import information from routes/api
-const apiRoutes = require("./api");
+const apiRoutes = require("./api/routes");
 
 // API Routes
-router.use("/ap``i", apiRoutes);
+router.use("/api/routes", apiRoutes);
 
 // If no API routes are hit, send the React app
 router.use(function (req, res) {

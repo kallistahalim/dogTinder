@@ -6,7 +6,7 @@ const db = require("../../models/dog");
 
 
 //extract all information from MongoDB
-// @route   GET api/items
+// @route   GET api/routes
 // @desc    Get All Items
 // @access  Public
 router.get('/', (req, res) => {
@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
 
 //extract a certain ID information from MongoDB
-// @route   GET api/items
+// @route   GET api/routes
 // @desc    Get All Items
 // @access  Public
 router.get('/:id', (req, res) => {
@@ -28,6 +28,7 @@ router.get('/:id', (req, res) => {
 
 
 //input information to MongoDB
+//@route  POST api/routes
 router.post('/', (req, res) => {
     const newItem = new db({
       name: req.body.name,
@@ -53,7 +54,7 @@ router.put('/update/:id', function (req, res) {
 });
 
 //Delete information by ID from MongoDB
-// @route   DELETE api/items/:id
+// @route   DELETE api/routes/:id
 // @desc    Delete A Item
 // @access  Private
 router.delete('/:id', (req, res) => {
